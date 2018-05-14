@@ -22,4 +22,4 @@ RUN curl https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz | tar -xJ \
     && cd .. \
     && rm -rf Python-3.6.1
 
-RUN pip3 install --upgrade pip && pip3 install wheel
+RUN pip3 install -U pip wheel awscli --no-cache-dir
